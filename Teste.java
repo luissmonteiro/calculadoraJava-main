@@ -1,6 +1,7 @@
 import org.junit.Test;
 import org.junit.Before;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 
 public class Teste{
@@ -50,5 +51,9 @@ public class Teste{
   @Test
     public void testSomaSubMult() {
       assertEquals(10.0, calculadora.adicao(3,5) + calculadora.subtracao(4,2) * calculadora.multiplicacao(1,1), .1);
+    }
+  @Test
+    public void testDivisaoZero() {
+      assertNotEquals(1, calculadora.divisao(10,0), .1);
     }
 }
