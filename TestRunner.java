@@ -2,15 +2,6 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-/**
-*  Classe que vai rodar os testes
-*  Necessária quando o JUnit é usado via Repl.it
-*  Quando se usa uma IDE como Eclipse, NetBeans, IntelliJ etc, 
-*  essa classe não é necessária
-* 
-*  IMPORTANTE: não altere o código abaixo
-* 
-*/
 public class TestRunner {
   public static void main() {
     Result result = JUnitCore.runClasses(Teste.class);
